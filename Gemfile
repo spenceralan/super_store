@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Project specific gems
 gem 'faker', github: 'stympy/faker'
+gem 'kaminari'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
