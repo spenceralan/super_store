@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    render :index
+    @recent_products = Product.recent_products
   end
 
 end

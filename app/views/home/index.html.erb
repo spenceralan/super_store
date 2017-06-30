@@ -3,7 +3,11 @@
 
   <h2>Most Recently Added Products:</h2>
 
-
+  
+  <% @recent_products.each do |product| %>
+    <h3><%= product.name %></h3>
+    <p>Created: <%= product.created_at.to_s(:long) %></p>
+  <% end %>
 
   <h2>Most Reviewed Product:</h2>
 
