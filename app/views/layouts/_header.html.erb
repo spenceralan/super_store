@@ -1,5 +1,9 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Super Store</h1>
+<div id="header_partial">
+  <div class="jumbotron">
+    <div class="container">
+      <h1><%= link_to "Super Store", root_path %></h1>
+
+      <%= link_to "Add Product", new_product_path, class: "btn btn-default" %>
+    </div>
   </div>
 </div>
