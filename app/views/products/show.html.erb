@@ -1,4 +1,4 @@
-<div id="product_show">
+<div id="products_show">
   <%= link_to "Edit Product", edit_product_path(@product), class: "btn btn-default" %>
   <%= link_to "Delete Product", product_path(@product), data: {method: :delete}, class: "btn btn-danger" %>
 
@@ -12,8 +12,9 @@
   <% @product.reviews.each do |review| %>
     <h4>
       <%= review.content %>
-      <span class="glyphicon glyphicon-remove">
-      </span>
+      <%= link_to product_review_path(@product, review), data: {method: :delete} do %>
+        <span class="glyphicon glyphicon-remove"></span>
+      <% end %>
     </h4>
     <p>by <%= review.username %></p>
     <p>Rating: <%= review.rating %></p>
