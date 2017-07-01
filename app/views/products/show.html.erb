@@ -10,7 +10,11 @@
 
   <h2>Reviews <%= link_to "Add Review", new_product_review_path(@product), class: "btn btn-default" %></h2>
   <% @product.reviews.each do |review| %>
-    <h4><%= review.content %></h4>
+    <h4>
+      <%= review.content %>
+      <span class="glyphicon glyphicon-remove">
+      </span>
+    </h4>
     <p>by <%= review.username %></p>
     <p>Rating: <%= review.rating %></p>
   <% end %>
