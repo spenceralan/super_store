@@ -19,7 +19,7 @@ Product.destroy_all
   Faker::Number.between(3, 30).times do
     product.reviews.create!(
       username: Faker::RickAndMorty.character,
-      content: Faker::Hipster.sentence(20, true, 5),
+      content: Faker::Hipster.sentence(12, true, 5),
       rating: Faker::Number.between(1, 5),
     )
   end
