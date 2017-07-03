@@ -1,6 +1,6 @@
 <div id="product_index">
 
-  <h3>There <%= @products.length == 1 ? "was" : "were" %> <%= pluralize @products.length, "result" %></h3>
+  <h3>There <%= @products.total_count == 1 ? "was" : "were" %> <%= pluralize @products.total_count, "result" %></h3>
 
   <% @products.each do |product| %>
     <h3><%= link_to product.name, product_path(product) %></h3>
