@@ -14,16 +14,29 @@ Bundler
 
 ### Installing
 
-Installation is quick and easy! First you can open this link https://murmuring-shelf-47892.herokuapp.com/ to see the webpage in action live online. Or you can clone this repository to your machine, navigate to the file path in your terminal, and run 'app.rb' by typing $'bundle exec ruby app.rb'. If you chose to clone the repository you will need to follow the instructions for setting up your database first. After you run 'app.rb' you will need to copy the localhost path into your web browser. The standard localhost for Sinatra is port 4567.
+Installation is quick and easy! First you can open this link https://rails-super-store.herokuapp.com/ to see the webpage in action live online. Or you can clone this repository to your machine and host it locally! 
 
-#### Setting up the Database
+Once it is cloned, navigate to the root of the project and run:
 
-Rake makes setting up a new databse on your machine quick and easy! There are two commands you will need to run from your terminal. Make sure you navigate to the correct directory first!
+```shell
+$ bundle
+```
 
-* bundle exec rake db:create
-* bundle exec rake db:schema:load
+When that finishes set up the database with the command:
 
-And thats it!
+```shell
+$ bundle exec rake db:setup
+```
+
+NOTE: Due to the random seed data this step may fail validations. In the unlinkely event it fails, run the above command again.
+
+When the database is successfully setup it is time to run the app!
+
+```shell
+bundle exec rails server
+```
+
+The default host path is http://localhost:3000
 
 ## Built With
 
