@@ -10,19 +10,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require bootstrap
  *= require_tree .
  *= require_self
  */
 
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: font-url('glyphicons-halflings-regular.eot');
-  src: font-url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-    url('glyphicons-halflings-regular.woff') format('woff'),
-    url('glyphicons-halflings-regular.ttf') format('truetype'),
-    url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 .pagination {
   font-size: 150%;

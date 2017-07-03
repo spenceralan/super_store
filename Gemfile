@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Project specific gems
+gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'faker', github: 'stympy/faker'
 gem 'kaminari'
 gem 'country_select'
