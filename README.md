@@ -2,7 +2,7 @@
 
 This app will save the world! Or more likely it will help you sort your inventory!
 
-Save 
+Save new products to your store with a simple form. Seach your inventory for products that are shipping from specified countries. Write reviews for the products so you and your customers know which are the best!
 
 ### Prerequisites
 
@@ -18,13 +18,13 @@ Installation is quick and easy! First you can open this link https://rails-super
 
 Once it is cloned, navigate to the root of the project and run:
 
-```bash
+```shell
 bundle
 ```
 
 When that finishes set up the database with the command:
 
-```bash
+```shell
 bundle exec rake db:setup
 ```
 
@@ -32,7 +32,7 @@ NOTE: Due to the random seed data this step may fail validations. In the unlinke
 
 When the database is successfully setup it is time to run the app!
 
-```bash
+```shell
 bundle exec rails server
 ```
 
@@ -41,37 +41,22 @@ The default host path is http://localhost:3000
 ## Built With
 
 * Ruby
-* Sinatra
+* Rails
 * HTML
 * CSS
 * Bootstrap https://getbootstrap.com/
 * ES6
 * Jquery https://jquery.com/
 
-## Screenshots
-
-#### Homepage
-
-![homepage screenshot](public/img/shot-home.png)
-
-#### Editing a store
-
-![homepage screenshot](public/img/shot-edit-store.png)
-
-
-#### Encountering an error
-
-![homepage screenshot](public/img/shot-error.png)
-
 ## Authors
 
-* Spencer Alan Ruiz
+* Spencer Alan
 
 ## License
 
 MIT License
 
-Copyright (c) 2017 Spencer Alan Ruiz
+Copyright (c) 2017 Spencer Alan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -6,6 +6,7 @@
   <%= f.label :price %>
   <%= f.text_field :price, class: "form-control" %>
   <%= f.label :country %>
-  <%= f.text_field :country, class: "form-control" %><br>
+  <%= f.country_select :country, {}, class: "form-control" %>
+  <br>
   <%= f.submit class: "btn btn-default" %>
 <% end %>
