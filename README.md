@@ -18,21 +18,21 @@ Installation is quick and easy! First you can open this link https://rails-super
 
 Once it is cloned, navigate to the root of the project and run:
 
-```shell
-$ bundle
+```bash
+bundle
 ```
 
 When that finishes set up the database with the command:
 
-```shell
-$ bundle exec rake db:setup
+```bash
+bundle exec rake db:setup
 ```
 
 NOTE: Due to the random seed data this step may fail validations. In the unlinkely event it fails, run the above command again.
 
 When the database is successfully setup it is time to run the app!
 
-```shell
+```bash
 bundle exec rails server
 ```
 
