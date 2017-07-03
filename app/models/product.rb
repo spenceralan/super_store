@@ -5,6 +5,11 @@ class Product < ApplicationRecord
   validates :price, :presence => true
   validates :country, :presence => true
 
+  def country_name
+    ISO3166::Country[country].name
+  end
+
+  scope :find_by_country, -> (country) { where(country: country) }
   scope :recent_products, -> { order(created_at: :desc).limit(3) }
   scope :most_reviewed, -> {(
     select("products.*, count(reviews.id) as reviews_count")

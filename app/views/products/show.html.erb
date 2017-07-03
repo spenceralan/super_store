@@ -3,7 +3,7 @@
   <%= link_to "Delete Product", product_path(@product), data: {method: :delete}, class: "btn btn-danger" %>
 
   <h1><%= @product.name %></h1>
-  <h4><%= @product.country %></h4>
+  <h4><%= @product.country_name %></h4>
   <h4><%= number_to_currency(@product.price) %></h4>
   
   <hr>

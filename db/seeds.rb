@@ -14,7 +14,7 @@ Product.destroy_all
   product = Product.create!(
     name: Faker::Book.title,
     price: Faker::Number.decimal(2),
-    country: Faker::Address.country,
+    country: ISO3166::Country.all.sample.alpha2,
   )
   Faker::Number.between(3, 30).times do
     product.reviews.create!(

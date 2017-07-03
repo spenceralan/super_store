@@ -43,6 +43,12 @@ class ProductsController < ApplicationController
     end
   end
 
+  def search
+    products = Product.find_by_country(params[:country])
+    @products = products.page params[:page]
+    render :index
+  end
+
 private
   def product_params
     params.require(:product).permit(:name, :price, :country)

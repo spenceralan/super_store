@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     resources :reviews
   end
 
+  get 'search' => 'products#search', as: 'search'
 
 end
