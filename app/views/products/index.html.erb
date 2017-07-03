@@ -1,8 +1,6 @@
 <div id="product_index">
 
-  <% if @products.empty? %>
-    <h3>No matches</h3>
-  <% end %>
+  <h3>There <%= @products.length == 1 ? "was" : "were" %> <%= pluralize @products.length, "result" %></h3>
 
   <% @products.each do |product| %>
     <h3><%= link_to product.name, product_path(product) %></h3>

@@ -10,7 +10,7 @@ require 'faker'
 
 Product.destroy_all
 
-50.times do
+250.times do
   product = Product.create!(
     name: Faker::Book.title,
     price: Faker::Number.decimal(2),
