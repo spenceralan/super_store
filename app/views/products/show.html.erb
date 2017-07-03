@@ -13,6 +13,7 @@
     <h4>
       <%= review.content %>
       <%= link_to product_review_path(@product, review), data: {method: :delete} do %>
+        <span class="hidden">Delete Review</span>
         <span class="glyphicon glyphicon-remove"></span>
       <% end %>
     </h4>
