@@ -19,7 +19,7 @@ class ReviewsController < ApplicationController
   def destroy
     product = Product.find(params[:product_id])
     Review.find(params[:id]).destroy
-    flash[:notice] = "The review has been updated."
+    flash[:notice] = "The review was sucessfully deleted."
     redirect_to product_path(product)
   end
 

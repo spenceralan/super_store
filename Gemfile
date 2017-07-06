@@ -35,6 +35,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'faker', github: 'stympy/faker'
 gem 'kaminari'
 gem 'country_select'
+gem 'rb-fsevent', github: "thibaudgg/rb-fsevent"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
